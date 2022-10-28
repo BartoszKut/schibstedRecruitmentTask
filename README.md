@@ -4,13 +4,13 @@ You’ll need to have `Node` >= 14.0.0 and `npm` >= 5.6 on your machine. <br/><b
 # How to run a project locally
 
 ### 1. Install Dependencies
-Please run `npm install`<br/><br/>
+Please run `npm install`<br/>
 
 ### 2. Lazybus API is not sending CORS headers so to work locally with the API proxying requests is required.
-Please run `node proxy.js`<br/><br/>
+Please run `node proxy.js`<br/>
 
 ### 3. Runs the app in the development mode.
-In the another card of your terminal please run `npm start`<br/><br/>
+In the another card of your terminal please run `npm start`<br/>
 
 ### 4. View app in the browser
 [http://localhost:3000](http://localhost:3000)<br/><br/><br/>
@@ -23,5 +23,5 @@ In the another card of your terminal please run `npm start`<br/><br/>
 4. To fetch data from the API I created a custom hook where axios communicate with proxy.
 5. To better UX I decided to render different types of images depending on viewport size.
 6. I focused on 2 kinds of devices desktops (large viewport) and mobile (small viewport) so different sizes require improvements.
-7. I decided that for every component which requires additional styling by css I import different css file created for this component.
-8. To almost every commit in addition to the main message I also add a short description message.
+7. I decided that for every component which requires additional styling by css I imported different css file created for this component.
+8. To almost every commit in addition to the main message I also added a short description message.
