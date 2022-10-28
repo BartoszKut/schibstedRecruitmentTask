@@ -1,4 +1,4 @@
-import { usePrograms } from './hooks/useApiConnection';
+import { usePrograms } from '../hooks/useApiConnection';
 import { ProgramItem } from './ProgramItem';
 import { useEffect, useState, useCallback } from 'react';
 import { Checkbox } from './Checkbox';
