@@ -4,13 +4,13 @@ You’ll need to have `Node` >= 14.0.0 and `npm` >= 5.6 on your machine. <br/><b
 # How to run a project locally
 
 ### 1. Install Dependencies
-Please run `npm install`<br/><br/>
+Please run `npm install`<br/>
 
 ### 2. Lazybus API is not sending CORS headers so to work locally with the API proxying requests is required.
-Please run `node proxy.js`<br/><br/>
+Please run `node proxy.js`<br/>
 
 ### 3. Runs the app in the development mode.
-In the another card of your terminal please run `npm start`<br/><br/>
+In the another card of your terminal please run `npm start`<br/>
 
 ### 4. View app in the browser
 [http://localhost:3000](http://localhost:3000)<br/><br/><br/>
