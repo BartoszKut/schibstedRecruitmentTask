@@ -1,4 +1,4 @@
-var http = require('follow-redirects').http;
+const http = require('follow-redirects').http;
 const url = require('url');
 
 const apiUrl = 'lazybus.tv.nu';
