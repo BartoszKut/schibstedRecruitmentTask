@@ -6,12 +6,13 @@ import { SortButtons } from './SortButtons';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Alert from 'react-bootstrap/Alert';
 
 export const DIRECTION_ASCENDING = 'ASC';
 export const DIRECTION_DESCENDING = 'DESC';
 
 export const ProgramsList = () => {
-    const { movies, series, programs } = usePrograms();
+    const { movies, series, programs, isError } = usePrograms();
     const [showPrograms, setShowPrograms] = useState();
     const [filters, setFilters] = useState({
         showMovies: false,
@@ -47,9 +48,7 @@ export const ProgramsList = () => {
 
     const sortHandler = useCallback(
         (direction) => {
-            if (
-                ![DIRECTION_ASCENDING, DIRECTION_DESCENDING].includes(direction)
-            ) {
+            if (![DIRECTION_ASCENDING, DIRECTION_DESCENDING].includes(direction)) {
                 return;
             }
 
@@ -93,12 +92,15 @@ export const ProgramsList = () => {
 
     return (
         <Container>
+            { isError && <Alert className='mt-3' variant={'danger'}>
+                Something went wrong. Please try again later.
+            </Alert> }
             <Row>
                 <SortButtons sortHandler={sortHandler} />
             </Row>
             <Row>
                 <Col lg={2}>
-                    <div className='mt-5'>
+                    <div className='mt-lg-5'>
                         <Checkbox
                             id="movies"
                             title="Movies"
