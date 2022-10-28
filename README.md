@@ -24,3 +24,4 @@ In the another card of your terminal please run `npm start`<br/><br/>
 5. To better UX I decided to render different types of images depending on viewport size.
 6. I focused on 2 kinds of devices desktops (large viewport) and mobile (small viewport) so different sizes require improvements.
 7. I decided that for every component which requires additional styling by css I import different css file created for this component.
+8. To almost every commit in addition to the main message I also add a short description message.
